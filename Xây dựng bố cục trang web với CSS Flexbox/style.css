@@ -1,0 +1,211 @@
+
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+}
+
+/* Bố cục tổng thể */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #243447;
+    color: white;
+}
+
+.header h1 {
+    margin-bottom: 8px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: #34495e;
+}
+
+.nav a {
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.nav a:hover {
+    background-color: #007bff;
+}
+
+/* Khu vực nội dung và sidebar */
+.main-container {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: stretch;
+}
+
+/* Nội dung chính chiếm 3 phần */
+.content {
+    flex: 3;
+    min-width: 0;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.content h2 {
+    margin-bottom: 12px;
+    color: #243447;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+.article {
+    margin-top: 20px;
+    padding: 18px;
+    background-color: #f7f9fc;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+}
+
+.article h3 {
+    margin-bottom: 8px;
+    color: #007bff;
+}
+
+/* Sidebar chiếm 1 phần */
+.sidebar {
+    flex: 1;
+    min-width: 0;
+    padding: 25px;
+    background-color: #e3eaf2;
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+    color: #243447;
+}
+
+.sidebar h3 {
+    margin-bottom: 8px;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    color: #1769aa;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.advertisement {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+    padding: 18px;
+    text-align: center;
+    background-color: #243447;
+    color: white;
+}
+
+/* Responsive cho điện thoại và màn hình nhỏ */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .nav {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .nav a {
+        padding: 8px 12px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .content,
+    .sidebar {
+        width: 100%;
+        flex: auto;
+        padding: 20px;
+    }
+}
+
+/* Responsive cho điện thoại rất nhỏ */
+@media (max-width: 400px) {
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav a {
+        text-align: center;
+    }
+
+    .main-container {
+        padding: 10px;
+    }
+
+    .content,
+    .sidebar {
+        padding: 15px;
+    }
+}

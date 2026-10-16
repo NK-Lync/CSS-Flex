@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS Flex Wrap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Thực hành CSS Flex Wrap</h1>
+        <p>So sánh các giá trị của thuộc tính flex-wrap</p>
+    </header>
+
+    <main class="page-container">
+        <section class="example">
+            <h2>1. flex-wrap: nowrap</h2>
+            <p>Các phần tử cố gắng nằm trên cùng một dòng.</p>
+
+            <div class="container nowrap">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>2. flex-wrap: wrap</h2>
+            <p>Các phần tử tự động xuống dòng khi không đủ chỗ.</p>
+
+            <div class="container wrap">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>3. flex-wrap: wrap-reverse</h2>
+            <p>Các dòng được sắp xếp theo hướng ngược của trục phụ.</p>
+
+            <div class="container wrap-reverse">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>4. flex-wrap: initial</h2>
+            <p>Đặt flex-wrap về giá trị mặc định là nowrap.</p>
+
+            <div class="container initial">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Bài thực hành CSS Flexbox</p>
+    </footer>
+</body>
+</html>

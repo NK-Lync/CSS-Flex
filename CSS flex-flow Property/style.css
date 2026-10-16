@@ -1,0 +1,111 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.page-header {
+    padding: 25px 15px;
+    text-align: center;
+    background-color: #243447;
+    color: white;
+}
+
+.page-header h1 {
+    margin: 0 0 10px;
+}
+
+.page-header p {
+    margin: 0;
+    color: #dce6f0;
+}
+
+.content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.example {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.example h2 {
+    margin-top: 0;
+    color: #243447;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: 2px dashed #b8c2cc;
+    border-radius: 5px;
+    min-height: 90px;
+}
+
+.item {
+    flex: 0 0 100px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Ví dụ 1: Từ trái sang phải, không xuống dòng */
+.container-1 {
+    flex-flow: row nowrap;
+}
+
+.container-1 .item {
+    background-color: #007bff;
+}
+
+/* Ví dụ 2: Từ phải sang trái, không xuống dòng */
+.container-2 {
+    flex-flow: row-reverse nowrap;
+}
+
+.container-2 .item {
+    background-color: #28a745;
+}
+
+.note {
+    margin-bottom: 0;
+    color: #555;
+}
+
+.page-footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #243447;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .content {
+        width: 95%;
+    }
+
+    .example {
+        padding: 15px;
+    }
+
+    .item {
+        flex-basis: 70px;
+    }
+}

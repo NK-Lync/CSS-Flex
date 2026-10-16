@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout - Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Responsive Website</h1>
+            <p>Bố cục linh hoạt với CSS Flexbox</p>
+        </header>
+
+        <nav class="navigation">
+            <a href="#home">Trang chủ</a>
+            <a href="#content">Nội dung</a>
+            <a href="#news">Tin tức</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <div class="main-container">
+            <main class="content" id="content">
+                <h2>Nội dung chính</h2>
+                <p>
+                    Đây là khu vực nội dung chính của trang web.
+                    Flexbox giúp sắp xếp các phần tử linh hoạt theo
+                    không gian có sẵn.
+                </p>
+
+                <div class="article">
+                    <h3>CSS Flexbox là gì?</h3>
+                    <p>
+                        Flexbox là mô hình bố cục CSS giúp căn chỉnh,
+                        sắp xếp và phân phối không gian giữa các phần tử.
+                    </p>
+                </div>
+
+                <div class="article">
+                    <h3>Thiết kế Responsive</h3>
+                    <p>
+                        Responsive giúp giao diện tự điều chỉnh để
+                        hiển thị phù hợp trên máy tính và điện thoại.
+                    </p>
+                </div>
+            </main>
+
+            <aside class="sidebar" id="news">
+                <h2>Sidebar</h2>
+                <h3>Tin tức mới</h3>
+                <ul>
+                    <li><a href="#news">Học HTML cơ bản</a></li>
+                    <li><a href="#news">Tìm hiểu CSS Flexbox</a></li>
+                    <li><a href="#news">Thiết kế giao diện web</a></li>
+                </ul>
+
+                <div class="advertisement">
+                    <h3>Thông báo</h3>
+                    <p>Khu vực dành cho nội dung phụ hoặc quảng cáo.</p>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="footer" id="contact">
+            <p>&copy; 2026 Responsive Website. Bài thực hành CSS Flexbox.</p>
+        </footer>
+    </div>
+</body>
+</html>
